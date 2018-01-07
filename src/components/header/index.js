@@ -9,7 +9,7 @@ class Header extends Component {
 			<header className="head">
 				<Input />
 				<nav className="head_nav">
-					<a className="head_nav__link" href="#">
+					<a className="head_nav__link" href="https://github.com/AjitsinghKamal/cred.git">
 						<img className="icon" src={require('../../github-icon.png')} alt="github logo"/>
 					</a>
 				</nav>
