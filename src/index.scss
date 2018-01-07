@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+	box-sizing: border-box;
+
+	@media screen and (max-width: 840px) {
+		font-size: calc( 12px + 0.4vw);
+	}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    &:before,
+    &:after {
+        box-sizing: inherit;
+	}
+
+	&:focus,
+	&:active,
+	&:hover {
+		outline: 0;
+	}
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+	list-style: none;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}

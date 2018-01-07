@@ -1,0 +1,14 @@
+.c-input {
+    flex: 0 0 50%;
+    button {
+		border: 0;
+        margin-right: 0.7em;
+        cursor: pointer;
+    }
+    .api-box {
+        width: 80%;
+        padding: 0.6em;
+        font-size: 0.8em;
+        border: 1px solid #eaeaea;
+    }
+}

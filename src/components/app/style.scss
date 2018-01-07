@@ -1,0 +1,62 @@
+.app {
+	position: relative;
+}
+.tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    .tab {
+        border: 1px solid #eaeaea;
+        padding: 0.6em 1.4em;
+        font-size: 0.8em;
+        margin: 1em;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background-color 0.4s, color 0.4s;
+        &.active {
+            background-color: black;
+            color: white;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.view-container {
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+	overflow-x: hidden;
+
+	&.active-list {
+		.data-list{
+			transform: translateX(0);
+		}
+	}
+
+	&.active-map {
+		.data-list {
+			transform: translateX(-100%);
+		}
+	}
+
+	>div{
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		min-height: 100vh;
+
+		&:first-child {
+			z-index: 1;
+		}
+		&:last-child {
+			z-index: 0;
+		}
+	}
+
+
+}
